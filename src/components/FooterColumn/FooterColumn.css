@@ -1,0 +1,31 @@
+.heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-columnlist a {
+    margin-bottom: 0.2rem;
+    margin-left: -30px;
+    text-decoration: none;
+    color: var(--third-text-color);
+    
+}
+.footer-columnlist a:hover{
+    text-decoration: solid;
+    font-size: large;
+}
+
+.footer-columnlist.selected a{
+    font-size: large;
+    color: var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+    .heading {
+        flex-direction: row;
+        font-size: 1.2rem;
+    }
+    .footer-columnlist{
+        font-size: 0.9rem;
+    }
+}

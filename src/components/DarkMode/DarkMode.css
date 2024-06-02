@@ -1,0 +1,25 @@
+
+.toggle-bar {
+    background-color: var(--background-footer-color);
+    height: 20px;
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 250ms ease-in-out;
+}
+.toggle-sphere {
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: all 0.5s ease;
+}
+.toggle-sphere.light {
+    left: 0px;
+    background-color: var(--background-color);
+}
+.toggle-sphere.dark {
+    left: 20px;
+    background-color: var(--background-color);
+}

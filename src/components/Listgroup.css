@@ -1,0 +1,19 @@
+.typewriter {
+  background-color: rgb(247, 240, 184);
+  border-right: 2px solid;
+  white-space: nowrap;
+  text-wrap: wrap;
+  height: 100px;
+  box-sizing: border-box;
+  animation: typing 3.5s  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}

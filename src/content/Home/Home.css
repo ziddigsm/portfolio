@@ -1,0 +1,86 @@
+.circular {
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.home {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 12%;
+    transition: var(--dark-mode-transition);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5px;
+    flex-direction: column;
+    font-weight: 500;
+}
+.name-bio {
+    gap: -10px;
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+.bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align:  center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 25px;
+}
+.biodata {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+}
+
+.exp {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    transition: var(--dark-mode-transition);
+}
+
+.nameonly {
+    background: -webkit-linear-gradient(left, red, blue);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.resume {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, red, blue);
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 11rem;
+    
+    cursor: pointer;
+    border-width: 0px;
+    transition: background-position 0.5s ease;
+}
+
+.resume a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.resume:hover {
+    background-position: -100% 0;
+}

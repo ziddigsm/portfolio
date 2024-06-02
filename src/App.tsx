@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Home from "./content/Home/Home";
+import NavbarCompo from "./components/NavBar/Navbar";
+import Footer from "./components/Footer/Footer";
+import About from "./content/About/About";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import useLocalStorage from 'use-local-storage';
+import { useMediaQuery } from 'react-responsive';
+import { ThemeContext } from "./context/ThemeContext";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export interface themeProps {
+  theme: boolean,
+  isChecked: ()=>void 
 }
 
-export default App
+function App() {
+  const systemPreference = useMediaQuery({query: '(prefers-color-scheme: dark)'});
+  const [isDark, setIsDark] = useLocalStorage("isDark",systemPreference);
+  
+  return (
+    <>
+    <ThemeContext.Provider value={{theme: isDark, isChecked: (()=>setIsDark(!isDark))}}>
+    <div className = "App" data-theme = {isDark ? "dark": "light"}>
+    <NavbarCompo />
+    <Home />
+    <About />
+    <Footer />
+    </div>
+      <Router>
+      <Routes>
+      <Route path="*" element = {<Navigate to={'/'}/>}></Route>
+      </Routes>
+    </Router>
+    </ThemeContext.Provider>
+    </>
+);
+}
+
+export default App;

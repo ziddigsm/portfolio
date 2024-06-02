@@ -1,0 +1,7 @@
+.navbar-dark .nav-link.disabled {
+    color: var(--disabled-color) !important;
+  }
+
+  .navbar-light .nav-link.disabled {
+    color: var(--disabled-color) !important;
+  }
