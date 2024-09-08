@@ -103,6 +103,6 @@
         font-weight: 600;
     }
     .achievements {
-        justify-content:center;
+        justify-content:space-evenly;
     }
 }

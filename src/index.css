@@ -8,6 +8,9 @@
   --dark-mode-transition: background-color 250ms ease-in-out;
   --highlight-color: #ffe2e2;
   --disabled-color:  rgb(192, 191, 191);
+  --education-tab-color-1: rgba(243, 10, 10, 0.2) 0%;
+  --education-tab-color-2: rgba(244, 238, 238, 0.42) 100%;
+  --education-tab-bg-color: rgb(241, 235, 235);
 }
 
 [data-theme="dark"] {
@@ -19,6 +22,9 @@
   --third-text-color: #0a0a0a;
   --dark-mode-transition: background-color 250ms ease-in-out;
   --disabled-color: rgb(66, 66, 66);
+  --education-tab-color-1: rgba(238, 8, 31, 0.2) 0%;
+  --education-tab-color-2: rgba(33, 32, 32, 0.42) 100%;
+  --education-tab-bg-color: rgb(18, 18, 18);
 }
 
 ul {
