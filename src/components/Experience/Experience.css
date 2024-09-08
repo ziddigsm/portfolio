@@ -80,7 +80,7 @@
     transform: translateX(-50%);
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 896px) {
     .experience-card {
       width: 90%;
     }
@@ -95,7 +95,7 @@
     }
   }
   
-  @media (min-width: 769px) {
+  @media (min-width: 897px) {
     .experience-timeline {
       gap: 4rem;
     }
