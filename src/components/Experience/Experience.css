@@ -5,99 +5,112 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-  }
-  
-  .experience-title {
+}
+
+.experience-title {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-  }
-  
-  .experience-timeline {
-    position:relative;
+}
+
+.experience-timeline {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1000px;
     gap: 2rem;
-  }
-  
-  .experience-card {
+}
+
+.experience-card {
     background-color: var(--education-tab-bg-color);
     border-radius: 10px;
     padding: 2rem;
     width: 45%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.8s ease;
-  }
-  
-  .experience-card:hover {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.experience-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .experience-card.left {
+}
+
+.experience-card.left {
     align-self: flex-start;
-  }
-  
-  .experience-card.right {
+}
+
+.experience-card.right {
     align-self: flex-end;
-  }
-  
-  .experience-content h2 {
+}
+
+.experience-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-content h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     background: -webkit-linear-gradient(left, #003cff, #f10a0a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-  .experience-content h3, .experience-content h4 {
+}
+
+.experience-content h3, .experience-content h4 {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-  }
-  
-  .experience-content ul {
-    list-style-type:inherit;
+}
+
+.experience-content ul {
+    list-style-type: inherit;
     margin-left: 1.5rem;
-  }
-  
-  .experience-content ul li {
+}
+
+.experience-content ul li {
     margin-bottom: 0.5rem;
     line-height: 1.5;
-  }
-  
-  .experience-timeline:before {
+}
+
+.experience-timeline:before {
     content: '';
-    position:absolute;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 50%;
     width: 2px;
     background-color: var(--primary-text-color);
     transform: translateX(-50%);
-  }
-  
-  @media (max-width: 896px) {
+}
+
+@media (max-width: 896px) {
     .experience-card {
-      width: 90%;
+        width: 90%;
     }
-  
+
     .experience-card.left, .experience-card.right {
-      align-self: center;
+        align-self: center;
     }
-  
+
     .experience-timeline:before {
-      left: 5%;
-      width: 1px;
+        left: 5%;
+        width: 1px;
     }
-  }
-  
-  @media (min-width: 897px) {
+}
+
+@media (min-width: 897px) {
     .experience-timeline {
-      gap: 4rem;
+        gap: 4rem;
     }
-  }
-  
+}
