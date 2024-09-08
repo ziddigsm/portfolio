@@ -25,7 +25,7 @@ function NavbarCompo() {
             <Nav className="me-auto my-2 my-lg-0">
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#Education">Education</Nav.Link>
-              <Nav.Link href="#action2" disabled>
+              <Nav.Link href="#Experience">
                 Experience
               </Nav.Link>
               <NavDropdown

@@ -10,7 +10,7 @@
   --disabled-color:  rgb(192, 191, 191);
   --education-tab-color-1: rgba(243, 10, 10, 0.2) 0%;
   --education-tab-color-2: rgba(244, 238, 238, 0.42) 100%;
-  --education-tab-bg-color: rgb(241, 235, 235);
+  --education-tab-bg-color: rgb(240, 240, 240);
 }
 
 [data-theme="dark"] {
