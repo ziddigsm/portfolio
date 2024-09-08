@@ -1,52 +1,113 @@
-.title {
-    text-align: center;
+.education {
     background-color: var(--background-color);
     color: var(--primary-text-color);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: var(--dark-mode-transition);
-    font-weight: 500;
-    justify-content: flex-start;
-    margin-top: -3rem;
-}
+  }
+  
+  .education-title {
+    margin-bottom: 2rem;
+    text-align: center;
 
-.universities {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .education-cards {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content:space-around;
-    gap: 34px;
-    margin-right: 32px;
-    margin-left: 32px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    gap: 2rem;
+  }
+  
+  .education-card {
+    display: flex;
+    align-items: center;
     background-color: var(--education-tab-bg-color);
-    border-radius: 24px;
-    padding: 20px;
-}
-
-.uni-logo {
-    display: flex;
-    align-self: center;
-    border-radius: 100%;
-    
-    margin: 0 auto;
-}
-
-.edu-container {
-    background-color: var(--background-color);
-    color: var(--primary-text-color);
-}
-
-.uni-list {
-    position: relative;
-    display: flex;
-    gap: 23px;
     border-radius: 10px;
-    padding: 10px;
-    background-image: -webkit-linear-gradient(90deg, var(--education-tab-color-1), var(--education-tab-color-2));
-}
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s ease;
+    cursor: pointer;
+  }
+  
+  .education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-logo {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  .education-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .education-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .education-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: var(--primary-text-color);
+    background: -webkit-linear-gradient(left, #003cff, #f10a0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .education-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text-color);
+  }
+  
+  .education-content h5 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text-color);
+  }
 
-@media (max-width: 896px) {
-    .universities{
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 50px;
+  .education-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .education-content p {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    color: var(--primary-text-color);
+  }
+  
+  @media (max-width: 896px) {
+    .education-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-}
+  
+    .education-logo img {
+      margin-bottom: 10px;
+    }
+  
+    .education-content h2, .education-content h3 {
+      font-size: 1.2rem;
+    }
+  
+    .education-content h4, .education-content p {
+      font-size: 1rem;
+    }
+  }
+  

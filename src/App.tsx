@@ -12,7 +12,8 @@ import {
 import useLocalStorage from "use-local-storage";
 import { useMediaQuery } from "react-responsive";
 import { ThemeContext } from "./context/ThemeContext";
-import { Education } from "./components/Education/Education";
+import  Education  from "./components/Education/Education";
+import Experience from "./components/Experience/Experience";
 
 export interface themeProps {
   theme: boolean;
@@ -35,6 +36,7 @@ function App() {
           <Home />
           <About />
           <Education />
+          <Experience />
           <Footer />
         </div>
         <Router>

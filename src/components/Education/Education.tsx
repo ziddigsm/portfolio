@@ -1,42 +1,59 @@
-import "./Education.css";
-import kluImg from "../../assets/klu.png";
-import ucImg from "../../assets/uc logo.png";
-import { useThemeContext } from "../../context/ThemeContext";
+import './Education.css';
+import ucLogo from '../../assets/uc logo.png';  // Path for University of Cincinnati logo
+import kluLogo from '../../assets/klu.png';  // Path for K L University logo
+import { useThemeContext } from '../../context/ThemeContext';
 
-export function Education() {
-    let theme: string = "light";
+function Education() {
+  let theme: string = "light";
   const themeProps = useThemeContext();
   if (themeProps.theme === true) 
-  theme = "dark";
+    theme = "dark";
+
+  const educationDetails = [
+    {
+      logo: ucLogo,
+      university: "University of Cincinnati",
+      location: "Cincinnati, Ohio, USA",
+      degree: "Master of Engineering",
+      major: "Computer Engineering - Data Science",
+      duration: "August 2023 - December 2024",
+      gpa: "GPA: 3.83"
+    },
+    {
+      logo: kluLogo,
+      university: "K L Deemed to be University",
+      location: "Vijayawada, Andhra Pradesh, India",
+      degree: "Bachelor of Technology",
+      major: "Electronics and Communications",
+      duration: "June 2017 - May 2021",
+      gpa: "GPA: 3.41"
+    }
+  ];
+
   return (
-    <>
-      <div className="edu-container" id='Education' data-theme={theme}>
-        <h2 className="title">Education</h2>
-        <ul className="universities">
-          <li className="uni-list">
-            <img className="uni-logo" src={ucImg}></img>
-            <div className="university-details uc">
-              <h4>University of Cincinnati</h4>
-              <a>Cincinnati, Ohio, USA</a>
-              <p>Master of Engineering</p>
-              <p>Computer Engineer - Data Science</p>
-              <p>August 2023 - December 2024</p>
-              <p>GPA - 3.83</p>
-            </div>
-          </li>
-          <li className="uni-list">
-            <img className="uni-logo" src={kluImg}></img>
-            <div className="university-details klu">
-              <h4>K L University</h4>
-              <a>Vijayawada, India</a>
-              <p>Bachelor of Technology</p>
-              <p>Electronics and Communications</p>
-              <p>July 2017 - May 2021</p>
-              <p>GPA - 3.41</p>
-            </div>
-          </li>
-        </ul>
+    <div className="education" id="Education" data-theme={theme}>
+      <div className="education-title">
+        <h1>Education</h1>
       </div>
-    </>
+      <div className="education-cards">
+        {educationDetails.map((edu, index) => (
+          <div className="education-card" key={index}>
+            <div className="education-logo">
+              <img src={edu.logo} alt={`${edu.university} logo`} />
+            </div>
+            <div className="education-content">
+              <h3>{edu.university}</h3>
+              <h5>{edu.location}</h5>
+              <h2>{edu.degree}</h2>
+              <h4>{edu.major}</h4>
+              <p>{edu.duration}</p>
+              <p>{edu.gpa}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
+
+export default Education;
