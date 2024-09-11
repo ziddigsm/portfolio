@@ -52,7 +52,7 @@ function NavbarCompo() {
                   Certifications
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#" disabled>
+              <Nav.Link href="#Contact">
                 Contact
               </Nav.Link>
               <Nav.Link href="#">
