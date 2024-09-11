@@ -9,16 +9,16 @@ export function Contact() {
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID|| "",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "",
         form,
         import.meta.env.VITE_EMAILJS_USER_ID || ""
       )
       .then(
-        (result) => {
+        () => {
           alert("Message sent successfully!");
         },
         (error) => {
-            console.log(error);
+          console.log(error);
           alert("An error occurred, please try again later.");
         }
       );
