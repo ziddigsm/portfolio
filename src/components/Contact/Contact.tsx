@@ -5,13 +5,12 @@ export function Contact() {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
-    //console.log(process.env.REACT_APP_SERVICE_ID);
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "",
+        atob(import.meta.env.VITE_EMAILJS_SERVICE_ID) || "",
+        atob(import.meta.env.VITE_EMAILJS_TEMPLATE_ID) || "",
         form,
-        import.meta.env.VITE_EMAILJS_USER_ID || ""
+        atob(import.meta.env.VITE_EMAILJS_USER_ID) || ""
       )
       .then(
         () => {
