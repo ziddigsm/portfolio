@@ -20,8 +20,6 @@ function About() {
                 <div className="about-skillset">
                 <div className='about-intro'>
                     <p>An experienced full-stack engineer with a proven track record, I bring to the table over 2 years of real-world experience in developing comprehensive web applications. Having honed my skills through two internships during my bachelor’s degree, I am now further expanding my knowledge horizon at the University of Cincinnati, pursuing a master’s degree. I am passionate about leveraging my academic insights and professional expertise to drive innovation and efficiency in the tech industry.</p>
-                    {//<p>Architect of the digital realm, I sculpt the backend with the chisel of Node and C#, craft the frontend with the palette of React, HTML, CSS, and JavaScript, and construct the infrastructure with the blueprint of Azure and Kubernetes. Together, they form the symphony of my tech expertise.</p> 
-                    }
                     </div>
                    <div className='about-skill-list'>
                    <div className="about-skill">
