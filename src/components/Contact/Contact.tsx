@@ -26,7 +26,7 @@ export function Contact() {
   };
 
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container" id="Contact">
       <div>
         <h1>Get in Touch</h1>
       </div>
