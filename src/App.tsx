@@ -12,8 +12,9 @@ import {
 import useLocalStorage from "use-local-storage";
 import { useMediaQuery } from "react-responsive";
 import { ThemeContext } from "./context/ThemeContext";
-import  Education  from "./components/Education/Education";
+import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
+import { Contact } from "./components/Contact/Contact";
 
 export interface themeProps {
   theme: boolean;
@@ -25,7 +26,7 @@ function App() {
     query: "(prefers-color-scheme: dark)",
   });
   const [isDark, setIsDark] = useLocalStorage("isDark", systemPreference);
-
+  
   return (
     <>
       <ThemeContext.Provider
@@ -37,6 +38,7 @@ function App() {
           <About />
           <Education />
           <Experience />
+          <Contact />
           <Footer />
         </div>
         <Router>
