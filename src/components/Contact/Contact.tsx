@@ -1,7 +1,24 @@
+import { useState } from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
 
 export function Contact() {
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    company: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+
+  const handleEntry = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+    console.log(formData);
+  };
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
@@ -33,31 +50,80 @@ export function Contact() {
         <div className="form-row">
           <div className="form-group">
             <label>First Name</label>
-            <input type="text" name="first_name" required />
+            <input
+              type="text"
+              name="first_name"
+              value={formData.first_name}
+              onChange={handleEntry}
+              required
+            />
           </div>
           <div className="form-group">
             <label>Last Name</label>
-            <input type="text" name="last_name" required />
+            <input
+              type="text"
+              name="last_name"
+              value={formData.last_name}
+              onChange={handleEntry}
+              required
+            />
           </div>
         </div>
         <div className="form-group-contact">
           <label>Company</label>
-          <input type="text" name="company" required />
+          <input
+            type="text"
+            name="company"
+            value={formData.company}
+            onChange={handleEntry}
+            required
+          />
         </div>
         <div className="form-group-contact">
           <label>Email</label>
-          <input type="email" name="email" required />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleEntry}
+            required
+          />
         </div>
         <div className="form-group-contact">
           <label>Phone</label>
-          <input type="tel" name="mobile" required />
+          <input
+            type="tel"
+            name="mobile"
+            value={formData.mobile}
+            onChange={handleEntry}
+            required
+          />
         </div>
         <div className="form-group-contact">
           <label>Message</label>
-          <textarea name="message" rows={5} required></textarea>
+          <textarea
+            name="message"
+            rows={5}
+            value={formData.message}
+            onChange={handleEntry}
+            required
+          ></textarea>
         </div>
         <div className="buttons">
-          <button type="reset" className="reset">
+          <button
+            type="reset"
+            className="reset"
+            onClick={() =>
+              setFormData({
+                first_name: "",
+                last_name: "",
+                company: "",
+                email: "",
+                mobile: "",
+                message: "",
+              })
+            }
+          >
             Clear All
           </button>
           <button type="submit" className="submit">
