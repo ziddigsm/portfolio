@@ -1,7 +1,7 @@
 import myImage from "../../assets/ziddi.jpeg";
 import Typist from "react-typist-component";
 import "./Home.css";
-import myResume from "../../assets/Ghouse Mohammad.pdf";
+import myResume from "../../assets/Ghouse Shahe Meera Ziddi Mohammad Resume.pdf";
 import { SocialIcons } from "../../components/Social/Social";
 import { useThemeContext } from "../../context/ThemeContext";
 

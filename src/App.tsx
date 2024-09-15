@@ -15,6 +15,7 @@ import { ThemeContext } from "./context/ThemeContext";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
 import { Contact } from "./components/Contact/Contact";
+import { Skills } from "./components/Skills/Skills";
 
 export interface themeProps {
   theme: boolean;
@@ -38,6 +39,7 @@ function App() {
           <About />
           <Education />
           <Experience />
+          <Skills />
           <Contact />
           <Footer />
         </div>
