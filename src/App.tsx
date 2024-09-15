@@ -16,6 +16,7 @@ import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
 import { Contact } from "./components/Contact/Contact";
 import { Skills } from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
 
 export interface themeProps {
   theme: boolean;
@@ -39,6 +40,7 @@ function App() {
           <About />
           <Education />
           <Experience />
+          <Projects />
           <Skills />
           <Contact />
           <Footer />

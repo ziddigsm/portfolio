@@ -1,0 +1,61 @@
+.projects-section {
+    background-color: var(--background-color);
+    color: var(--primary-text-color); 
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projects-title {
+    margin-bottom: 2rem;
+    
+  }
+  
+  .projects {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .project {
+    background-color: var(--education-tab-bg-color); 
+    border-radius: 10px;
+    padding: 2rem;
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:justify;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(left, #003cff, #f10a0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+   
+  @media (max-width: 1075px) {
+    .projects {
+      flex-direction: column; 
+      gap: 1.5rem;
+    }
+  
+    .project {
+      width: 100%;
+    }
+  }
+  

@@ -49,6 +49,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px 30px;
+    text-align: justify;
 }
 
 .exp {
