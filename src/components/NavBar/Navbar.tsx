@@ -17,7 +17,7 @@ function NavbarCompo() {
   if (themeProps.theme === true) theme = "dark";
   return (
     <div>
-      <Navbar bg={theme} variant={theme} expand="lg" className="mr-sm-6">
+      <Navbar bg={theme} variant={theme} expand="lg" className=" mr-sm-6 navbar-nav">
         <Container fluid>
           <Navbar.Brand href="#">Home</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -28,20 +28,8 @@ function NavbarCompo() {
               <Nav.Link href="#Experience">
                 Experience
               </Nav.Link>
-              <NavDropdown
-                title="Projects"
-                id="navbarScrollingDropdown"
-                disabled
-              >
-                <NavDropdown.Item href="#action3">BardTales</NavDropdown.Item>
-                <NavDropdown.Item href="#action4" disabled>
-                  IBM Watson - Chatbot
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#Awards" disabled>Awards</Nav.Link>
+              <Nav.Link href="#Projects" disabled>Projects</Nav.Link>
               <Nav.Link href="#Skills">
               Skills & Certifications
               </Nav.Link>
@@ -52,18 +40,7 @@ function NavbarCompo() {
                 <DarkModeToggle />
               </Nav.Link>
             </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-                disabled
-              />
-              <Button variant="outline-success" disabled>
-                Search
-              </Button>
-            </Form>
+
           </Navbar.Collapse>
         </Container>
       </Navbar>
