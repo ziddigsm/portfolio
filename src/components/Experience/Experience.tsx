@@ -16,12 +16,14 @@ function Experience() {
       company: "Accenture | Hyderabad, India",
       duration: "08/2021 – 08/2023",
       details: [
-        "Developed and maintained web applications using C#, .NET MVC, LINQ, and Entity Framework.",
-        "Designed over 30 automated Dataflow pipelines using Azure Data Factory, improving data processing efficiency.",
-        "Built over 130 RESTful APIs in Node.js, Express.js and C#, saving the client over $18 million annually.",
-        "Led the backend team during lead absences and improved product delivery by 23% using Agile planning.",
-        "Recipient of Employee of the Month Award for exemplified contributions to the project success. ",
-        "Developed robust user interfaces using React for seamless interactivity, effectively applying expertise in TypeScript and JavaScript. "
+        "Created a persona-based capital project management system, increasing project operational effectiveness within the procurement and construction execution workflows.",
+        "Integrated AI based ticket remediation for KPI monitoring, improving the issue detection and resolution by 26%.",
+        "Streamlined ETL Pipelines with C#, automating processes and eliminating three major sources of manual intervention and error",
+        "Designed and deployed over 130 REST APIs via Node.js, Express.js to support trade risk management, planning and optimization, while improving operational efficiency, and reducing manual errors.",
+        "Incorporated crude price, tracking and market news into the web application via Scheduler jobs, facilitating real-time insights for improved supply and trade assessments.",
+        "Optimized production planning and feedstock selection developing RESTful APIs to handle annual, monthly and daily planning data, saving $35 million every year.",
+        "Maintained faster rendering and reduced load times by 18% through implementation of lazy loading and asynchronous data fetching techniques.",
+        "Incorporated engaging KPI dashboards for real-time business insights, providing real-time insights."
       ],
     },
     {
@@ -30,8 +32,9 @@ function Experience() {
       company: "Efftronics Pvt. Ltd. | Vijayawada, India",
       duration: "06/2019 – 02/2020",
       details: [
-        "Collaborated on an Agile team to build a React app, improving user experience.",
-        "Refined code reusability by 28% through the development of modular components.",
+        "Developed modular and reusable react components, decreasing code duplicity by 28%.",
+        "Integrated interactive and interactive PowerBI reports, allowing stakeholders to make data-driven decisions.",
+        "Improved Data Retrieval by incorporating GraphQL, reducing response time by 12% and preventing over-fetching of data."
       ],
     },
     {
@@ -40,7 +43,7 @@ function Experience() {
       company: "Airports Authority of India | Vijayawada, India",
       duration: "05/2019 – 05/2019",
       details: [
-        "Contributed to infrastructure monitoring and management systems.",
+        "Developed serverless APIs using Azure Functions and C# as a student intern at AAI, improving response times by 16%, resulting in faster page loading and improved user experience.",
       ],
     },
   ];
