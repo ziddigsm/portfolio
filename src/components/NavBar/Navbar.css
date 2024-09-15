@@ -5,3 +5,12 @@
   .navbar-light .nav-link.disabled {
     color: var(--disabled-color) !important;
   }
+
+  .navbar-nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    margin-right: 8%;
+  }
