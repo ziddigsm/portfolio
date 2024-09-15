@@ -25,8 +25,8 @@ function NavbarCompo() {
               <Nav.Link href="#Experience">
                 Experience
               </Nav.Link>
-              <Nav.Link href="#Awards" disabled>Awards</Nav.Link>
-              <Nav.Link href="#Projects" disabled>Projects</Nav.Link>
+              <Nav.Link href="#Awards">Awards</Nav.Link>
+              <Nav.Link href="#Projects">Projects</Nav.Link>
               <Nav.Link href="#Skills">
               Skills & Certifications
               </Nav.Link>
