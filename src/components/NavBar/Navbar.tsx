@@ -42,16 +42,9 @@ function NavbarCompo() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown
-                title="Skills & Certifications"
-                id="navbarScrollingDropdownSC"
-                disabled
-              >
-                <NavDropdown.Item href="#action6">Skills</NavDropdown.Item>
-                <NavDropdown.Item href="#action7">
-                  Certifications
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#Skills">
+              Skills & Certifications
+              </Nav.Link>
               <Nav.Link href="#Contact">
                 Contact
               </Nav.Link>

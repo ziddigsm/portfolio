@@ -22,7 +22,7 @@ import github from "../../assets/github.svg";
 import vs from "../../assets/visual-studio.svg";
 import postman from "../../assets/postman.svg";
 import python from "../../assets/python.svg";
-import bi from "../../assets/powerbi.svg"
+import bi from "../../assets/powerbi.svg";
 import adf from "../../assets/adf.png";
 import synapse from "../../assets/synapse.png";
 import gql from "../../assets/GraphQL_Logo.png";
@@ -40,7 +40,6 @@ import soapui from "../../assets/soapui.png";
 import az900 from "../../assets/az900.png";
 
 import "./Skills.css";
-
 
 export function Skills() {
   const skillSet = [
@@ -244,32 +243,35 @@ export function Skills() {
       ],
     },
     {
-        title: "Certifications",
-        skills: [
-          {
-            skill: "Microsoft Azure Fundamentals",
-            image: az900,
-          }
-        ],
-      },
+      title: "Certifications",
+      skills: [
+        {
+          skill: "Microsoft Azure Fundamentals",
+          image: az900,
+        },
+      ],
+    },
   ];
-  return <div className="skillSet">
-    <h1>Skills and Certifications</h1>
-    {skillSet.map((skills, index)=>{
+  return (
+    <div className="skillSet">
+      <h1>Skills and Certifications</h1>
+      {skillSet.map((skills) => {
         return (
-            <div className="skills-total">
-                <h3 className="skills-title">{skills.title}</h3>
-                <div className="skill-by-category">{skills.skills.map((skill, id)=>{
-                    return (
-                        <div className="skill">
-                            <img src={skill.image} alt="img" />
-                            <h5>{skill.skill}</h5>
-                        </div>
-                    )
-                })}</div>
+          <div className="skills-total" id = "Skills">
+            <h3 className="skills-title">{skills.title}</h3>
+            <div className="skill-by-category">
+              {skills.skills.map((skill) => {
+                return (
+                  <div className="skill">
+                    <img src={skill.image} alt="img" />
+                    <h5>{skill.skill}</h5>
+                  </div>
+                );
+              })}
             </div>
-            
-        )
-    })}
-  </div>;
+          </div>
+        );
+      })}
+    </div>
+  );
 }
