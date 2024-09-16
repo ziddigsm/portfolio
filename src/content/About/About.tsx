@@ -42,7 +42,7 @@ function About() {
                 </div>
                 <div className="achievements">
                     <div className='achievement-title'>
-                        <h1>3+</h1>
+                        <h1>5+</h1>
                         <strong>Awards</strong>
                     </div>
                     <hr />
@@ -52,7 +52,7 @@ function About() {
                     </div>
                     <hr />
                     <div className='achievement-title'>
-                        <h1>3</h1>
+                        <h1>4</h1>
                         <strong>Projects</strong>
                     </div>
                 </div>

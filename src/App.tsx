@@ -4,7 +4,7 @@ import NavbarCompo from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 import About from "./content/About/About";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate,
@@ -17,6 +17,7 @@ import Experience from "./components/Experience/Experience";
 import { Contact } from "./components/Contact/Contact";
 import { Skills } from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import { Awards } from "./components/Awards/Awards";
 
 export interface themeProps {
   theme: boolean;
@@ -28,7 +29,7 @@ function App() {
     query: "(prefers-color-scheme: dark)",
   });
   const [isDark, setIsDark] = useLocalStorage("isDark", systemPreference);
-  
+
   return (
     <>
       <ThemeContext.Provider
@@ -40,6 +41,7 @@ function App() {
           <About />
           <Education />
           <Experience />
+          <Awards />
           <Projects />
           <Skills />
           <Contact />
