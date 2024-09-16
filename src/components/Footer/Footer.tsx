@@ -38,7 +38,7 @@ function Footer() {
                             type: "Link"
                         },
                         {
-                            title: "Skills & Certifications",
+                            title: "Awards",
                             type: "Link"
                         }
                     ]
