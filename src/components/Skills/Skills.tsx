@@ -38,6 +38,8 @@ import ssms from "../../assets/ssms.png";
 import ssis from "../../assets/SSIS.png";
 import soapui from "../../assets/soapui.png";
 import az900 from "../../assets/az900.png";
+import tailwind from "../../assets/tailwindcss-icon.svg";
+import bootstrap from "../../assets/Bootstrap_logo.svg.png";
 
 import "./Skills.css";
 
@@ -70,6 +72,14 @@ export function Skills() {
           skill: "TypeScript",
           image: ts,
         },
+        {
+          skill: "React Bootstrap",
+          image: bootstrap
+        },
+        {
+          skill: "Tailwind CSS",
+          image: tailwind
+        }
       ],
     },
     {
@@ -174,6 +184,10 @@ export function Skills() {
           skill: "PowerBI",
           image: bi,
         },
+        {
+          skill: "Figma",
+          image: figma,
+        }
       ],
     },
     {
