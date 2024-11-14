@@ -1,7 +1,6 @@
 import myImage from "../../assets/ziddi.jpeg";
 import Typist from "react-typist-component";
 import "./Home.css";
-import myResume from "../../assets/Ghouse Shahe Meera Ziddi Mohammad Resume.pdf";
 import { SocialIcons } from "../../components/Social/Social";
 import { useThemeContext } from "../../context/ThemeContext";
 
@@ -37,11 +36,6 @@ function Home() {
       <div className="bio">
         <SocialIcons />
         <span className="biodata">{bio}</span>
-        <button className="resume" title="Download my Resume">
-          <a href={myResume} download="Resume">
-            My Resume
-          </a>
-        </button>
       </div>
     </div>
   );
