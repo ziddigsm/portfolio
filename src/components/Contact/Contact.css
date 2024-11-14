@@ -58,13 +58,14 @@
 
   .submit {
     width: 20%;
-    justify-content: space-between;
+    justify-content:center;
     padding: 10px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    justify-items: center;
   }
   .reset {
     width: 20%;
@@ -92,6 +93,14 @@
     .form-group {
       width: 100%;
       margin-bottom: 20px;
+    }
+    .reset {
+      font-size: small;
+      padding: 5px;
+    }
+    .submit {
+      font-size: small;
+      padding: 5px;
     }
   }
   
