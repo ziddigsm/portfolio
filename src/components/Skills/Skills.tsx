@@ -40,6 +40,8 @@ import soapui from "../../assets/soapui.png";
 import az900 from "../../assets/az900.png";
 import tailwind from "../../assets/tailwindcss-icon.svg";
 import bootstrap from "../../assets/Bootstrap_logo.svg.png";
+import golang from "../../assets/golang.png";
+import sketch from "../../assets/sketch.png";
 
 import "./Skills.css";
 
@@ -109,6 +111,10 @@ export function Skills() {
           skill: "Python",
           image: python,
         },
+        {
+          skill: "GoLang",
+          image: golang,
+        }
       ],
     },
     {
@@ -185,8 +191,8 @@ export function Skills() {
           image: bi,
         },
         {
-          skill: "Figma",
-          image: figma,
+          skill: "Sketch",
+          image: sketch,
         }
       ],
     },
