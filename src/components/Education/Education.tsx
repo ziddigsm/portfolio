@@ -1,13 +1,12 @@
-import './Education.css';
-import ucLogo from '../../assets/uc logo.png';  // Path for University of Cincinnati logo
-import kluLogo from '../../assets/klu.png';  // Path for K L University logo
-import { useThemeContext } from '../../context/ThemeContext';
+import "./Education.css";
+import ucLogo from "../../assets/uc logo.png"; // Path for University of Cincinnati logo
+import kluLogo from "../../assets/klu.png"; // Path for K L University logo
+import { useThemeContext } from "../../context/ThemeContext";
 
 function Education() {
   let theme: string = "light";
   const themeProps = useThemeContext();
-  if (themeProps.theme === true) 
-    theme = "dark";
+  if (themeProps.theme === true) theme = "dark";
 
   const educationDetails = [
     {
@@ -16,8 +15,8 @@ function Education() {
       location: "Cincinnati, Ohio, USA",
       degree: "Master of Engineering",
       major: "Computer Engineering - Data Science",
-      duration: "August 2023 - December 2024",
-      gpa: "GPA: 3.83"
+      duration: "August 2023 - May 2025",
+      gpa: "GPA: 3.83",
     },
     {
       logo: kluLogo,
@@ -26,8 +25,8 @@ function Education() {
       degree: "Bachelor of Technology",
       major: "Electronics and Communications",
       duration: "June 2017 - May 2021",
-      gpa: "GPA: 3.41"
-    }
+      gpa: "GPA: 3.41",
+    },
   ];
 
   return (

@@ -41,7 +41,15 @@ import az900 from "../../assets/az900.png";
 import tailwind from "../../assets/tailwindcss-icon.svg";
 import bootstrap from "../../assets/Bootstrap_logo.svg.png";
 import golang from "../../assets/golang.png";
-import sketch from "../../assets/sketch.png";
+import rtl from "../../assets/rtl.png";
+import ghf from "../../assets/github-foundations-certification.webp";
+import vite from "../../assets/vite.png";
+import jira from "../../assets/jira.png";
+import jenkins from "../../assets/jenkins.png";
+import flaskapi from "../../assets/flaskapi.png";
+import asp from "../../assets/asp.net.logo.png";
+import zustand from "../../assets/zustand.png";
+import docker from "../../assets/docker.png";
 
 import "./Skills.css";
 
@@ -75,13 +83,21 @@ export function Skills() {
           image: ts,
         },
         {
+          skill: "Zustand",
+          image: zustand,
+        },
+        {
+          skill: "Vite",
+          image: vite,
+        },
+        {
           skill: "React Bootstrap",
-          image: bootstrap
+          image: bootstrap,
         },
         {
           skill: "Tailwind CSS",
-          image: tailwind
-        }
+          image: tailwind,
+        },
       ],
     },
     {
@@ -100,6 +116,14 @@ export function Skills() {
           image: net,
         },
         {
+          skill: "ASP.NET Core",
+          image: asp,
+        },
+        {
+          skill: "Flask API",
+          image: flaskapi,
+        },
+        {
           skill: "Node.js",
           image: node,
         },
@@ -114,7 +138,7 @@ export function Skills() {
         {
           skill: "GoLang",
           image: golang,
-        }
+        },
       ],
     },
     {
@@ -140,6 +164,18 @@ export function Skills() {
         {
           skill: "Kubernetes",
           image: kubernetes,
+        },
+        {
+          skill: "Docker",
+          image: docker,
+        },
+        {
+          skill: "Jenkins",
+          image: jenkins,
+        },
+        {
+          skill: "Jira",
+          image: jira,
         },
       ],
     },
@@ -190,10 +226,6 @@ export function Skills() {
           skill: "PowerBI",
           image: bi,
         },
-        {
-          skill: "Sketch",
-          image: sketch,
-        }
       ],
     },
     {
@@ -253,6 +285,10 @@ export function Skills() {
           image: nunit,
         },
         {
+          skill: "React Testing Library",
+          image: rtl,
+        },
+        {
           skill: "Jest",
           image: jest,
         },
@@ -269,6 +305,10 @@ export function Skills() {
           skill: "Microsoft Azure Fundamentals",
           image: az900,
         },
+        {
+          skill: "GitHub Foundations",
+          image: ghf,
+        },
       ],
     },
   ];
@@ -277,7 +317,7 @@ export function Skills() {
       <h1>Skills and Certifications</h1>
       {skillSet.map((skills) => {
         return (
-          <div className="skills-total" id = "Skills">
+          <div className="skills-total" id="Skills">
             <h3 className="skills-title">{skills.title}</h3>
             <div className="skill-by-category">
               {skills.skills.map((skill) => {

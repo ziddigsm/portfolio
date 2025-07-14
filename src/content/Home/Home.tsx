@@ -9,8 +9,8 @@ function Home() {
   const themeProps = useThemeContext();
   if (themeProps.theme === true) theme = "dark";
   const bio =
-    "Embarking on a journey through the digital cosmos, I’m Ghouse Shahe Meera Ziddi Mohammad, a navigator of the data science realm, currently honing my skills in Computer Engineering at the University of Cincinnati. As I continue to master my craft, I’m on the lookout for challenging internships to apply my knowledge and further sharpen my abilities.";
-  const exp = "Ex-Accenture | Ex-Efftronics";
+    "Hi, I’m Ghouse Shahe Meera Ziddi Mohammad, a full-stack software engineer with four years of hands-on experience building scalable, cloud-native applications. My core strengths lie in React, React Native, Node.js, and C#.NET, with solid experience deploying solutions to Azure and AWS. I’ve led efforts in designing efficient frontends, integrating backend APIs, and implementing DevOps pipelines using tools like Azure DevOps, Docker, and Kubernetes. I’m a recent Master’s Gradute in Computer Engineering at the University of Cincinnati, and I’m passionate about crafting clean, user-focused applications that perform well at scale.";
+  const exp = "Ex-One Community Global | Ex-Accenture | Ex-Efftronics";
   return (
     <div className="home" id="Home" data-theme={theme}>
       <div className="name">
